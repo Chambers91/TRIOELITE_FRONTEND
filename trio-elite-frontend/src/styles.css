@@ -13,3 +13,21 @@ body{
     background: #997570;
 
 }
+
+.Login{
+
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff
+}
+
+.Login h1{
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.Login form{
+    font-size: 20px;
+}
