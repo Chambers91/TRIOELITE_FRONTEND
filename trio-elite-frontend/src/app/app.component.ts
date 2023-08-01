@@ -8,9 +8,19 @@ import {HttpClient} from '@angular/common/http';
 })
 export class AppComponent implements OnInit{
   title = 'trio-elite-frontend';
+
+  public getJsonValue: any;
+  public postJsonValue: any;
   constructor (public http: HttpClient){
     
   }
-  ngOnInit() { }
+  ngOnInit(): void{ 
+   this.getMethod();
+  }
+    public getMethod(){
+      this.http.get('https://jsonplaceholder.typicode.com/posts').subscribe((data) => {
+        console.log(data);
+      })
+      }
+  }
 
-}
