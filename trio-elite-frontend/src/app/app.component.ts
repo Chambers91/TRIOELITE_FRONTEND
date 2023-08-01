@@ -20,7 +20,15 @@ export class AppComponent implements OnInit{
     public getMethod(){
       this.http.get('https://jsonplaceholder.typicode.com/posts').subscribe((data) => {
         console.log(data);
+        this.getJsonValue();
       })
       }
+
+      public postMethod(){
+        this.http.post('https://jsonplaceholder.typicode.com/posts',{}).subscribe((data) => {
+          console.log(data);
+          this.postJsonValue();
+        })
+        }
   }
 
